@@ -1,5 +1,3 @@
-escreva("Alô, Github!")
-
 //Declaração de variáveis
 var nome: texto = "Guilherme"
 var ano_de_nascimento: inteiro = 2008
@@ -21,7 +19,14 @@ se (usa_óculos) {
     escreva('Que pena! Você não usa óculos!');
 }
 
- nome = leia ("digite seu nome")
+ nome = texto(leia ("digite seu nome"))
  ano_de_nascimento = inteiro(leia("Digite seu ano de nascimento"))
  salário = real(leia("digite seu salário"))
  idade = leia ("digite sua idade")
+
+
+escreva ("${nome}")
+escreva ("${salário}")
+escreva ("${ano_de_nascimento}")
+escreva (" ${idade}")
+escreva (" $usa_óculos")
