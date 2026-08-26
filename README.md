@@ -1,1 +1,1 @@
-# Exercicio-1
+escreva("Alô, Github!")
