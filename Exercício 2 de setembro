@@ -21,13 +21,13 @@ para var i = 1; i <= 3; i++ {
     } senão {
         usa_oculos = falso
     }
-    // Preparar o texto do óculos
+    
     se (usa_oculos) {
         texto_oculos = "e usa óculos!"
     } senão {
         texto_oculos = "e não usa óculos!"
     }
-    // escrever
+    
     escreva("${nome} tem ${idade} anos, ganha R$ ${salario_anual} por ano ${texto_oculos}")
     se (salario_anual >= 100000) {
         escreva('Você é muito rico!')
@@ -57,5 +57,6 @@ escreva ("Media dos valores: " + texto(media))
 senao { 
 escreva ("Nenhum número válido foi inserido.")
 }
+
 
 
