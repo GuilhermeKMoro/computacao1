@@ -54,9 +54,3 @@ var media = soma / quantidade
 escreva (" Quantidade de valores lidos: " + texto(quantidade))
 escreva ("Media dos valores: " + texto(media))
 }
-senao { 
-escreva ("Nenhum número válido foi inserido.")
-}
-
-
-
