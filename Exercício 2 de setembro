@@ -9,7 +9,7 @@ var resposta: texto
 var texto_oculos: texto
 
 
-para var i = 1; i <= 3; i++ {
+para var i = 1; i <= 3; i = i+1 {
     nome = leia("Digite seu nome: ")
     nascimento = inteiro(leia("Digite o ano que você nasceu: "))
     idade = ano - nascimento
