@@ -1,0 +1,39 @@
+var nome: texto = "Guilherme"
+var nascimento: inteiro = 2008
+constante ano = 2026
+var idade: inteiro = (ano - nascimento)
+var salario_mensal: real = 10000
+var salario_anual: real = ("salário_mensal*12")
+var usa_oculos: logico = falso
+var resposta: texto
+var texto_oculos: texto
+
+
+para var contador = 1; contador <= 3; contador++ {
+    nome = leia("Digite seu nome: ")
+    nascimento = inteiro(leia("Digite o ano que você nasceu: "))
+    idade = ano - nascimento
+    salario_mensal = real(leia("Digite seu salario mensal: "))
+    salario_anual = salario_mensal * 12
+    resposta = leia("Você usa óculos? Responda V ou F: ")
+    se (resposta == 'V') {
+        usa_oculos = verdadeiro
+    } senão {
+        usa_oculos = falso
+    }
+    // Preparar o texto do óculos
+    se (usa_oculos) {
+        texto_oculos = "e usa óculos!"
+    } senão {
+        texto_oculos = "e não usa óculos!"
+    }
+    // escrever
+    escreva("${nome} tem ${idade} anos, ganha R$ ${salario_anual} por ano ${texto_oculos}")
+    se (salario_anual >= 100000) {
+        escreva('Você é muito rico!')
+    } senão     se (salario_anual <= 2000) {
+        escreva('Você é um pobre coitado!')
+    } senão {
+        escreva('Você está bem?')
+    }
+}
