@@ -1,0 +1,26 @@
+var nomes = []
+var notas = []
+var media: real 
+var media_da_turma: real = 0
+var quantidade_de_alunos: inteiro 
+quantidade_de_alunos = inteiro(leia("Digite a Quantidade de Alunos"))
+para (var i = 1; i <= quantidade_de_alunos; i = i + 1) {
+    nomes.adicionar(leia("Digite o nome do(a) estudante"))
+    escreva("Aluno ${i}")
+    media = real(leia("Digite a média do(a) estudante"))
+    notas.adicionar(media)
+    escreva ("${media}")
+    media_da_turma = media_da_turma + media
+} 
+media_da_turma = media_da_turma / quantidade_de_alunos
+escreva("A média da turma foi ${media_da_turma}")
+
+para (var i = 0; i < quantidade_de_alunos; i = i + 1) {
+    se (notas[i] > 0.9 * media_da_turma) {
+        escreva("Aluno ${i+1} obteve nota superior a 90% da média da turma")
+    }
+}
+
+se (quantidade_de_alunos<=0) {
+    escreva("Programa Encerrado!")"sustar";
+}
